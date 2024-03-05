@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Karla";
+    background-color: hsl(204, 43%, 93%);;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 50%;
+}
+
+.section{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 55px;
+    border-radius: 15px 15px 0 0;
+}
+
+.h1-section{
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+
+.day-section{
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);;
+}
+
+.gain-section{
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 600px;
+    line-height: 25px;
+}
+
+.article{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 15px;
+    padding: 30px 30px 0;
+}
+
+.h1-article{
+    color: white;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.span-article{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.month-article{
+    color: hsl(204, 43%, 93%);;
+    font-size: 16px;
+}
+
+.full-article{
+    color: white;
+}
+
+.button{
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 1px 1px 10px hsl(218, 22%, 67%);
+    padding: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    min-width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px;
+    transition: all .5s linear;
+}
+
+.button:hover{
+    background-color: white;
+    color: hsl(71, 73%, 54%);
+}
+
+.aside{
+    background-color: hsl(178, 48%, 52%);
+    border-radius: 0px 0px 15px 0px;
+    padding: 30px;
+}
+
+.aside-why{
+    font-size: 30px;
+    color: white;
+}
+
+.p-aside{
+    color: hsl(204, 43%, 93%);
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 750px){
+
+    body{
+        height: auto;
+    }
+
+    .main{
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        grid-template-columns: 90%;
+    }
+
+    .section{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding: 30px;
+    }
+
+    .article{
+        border-radius: 0;
+        padding: 30px;
+    }
+
+    .aside{
+        border-radius: 0 0 15px 15px;
+    }
+}
